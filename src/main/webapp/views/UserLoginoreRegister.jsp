@@ -54,8 +54,8 @@ float: center;
 			<div class="login-show">
 				<h2>LOGIN</h2>
 				<form:form action="userlogin"   method="GET"  modelAttribute="user">
-				<form:input path="userName" value="Shubham" type="text" placeholder="User Name"></form:input>
-				<form:input path="password" value="Shubham" type="password" placeholder="Password"></form:input>
+				<form:input path="userName" value="usernmae" type="text" placeholder="User Name"></form:input>
+				<form:input path="password" value="username" type="password" placeholder="Password"></form:input>
 				<input type="submit" value="Login">
 				<p>${message}</p>
 				</form:form>
@@ -64,13 +64,13 @@ float: center;
 				<h2 style="margin-top:-2px;">REGISTER</h2>
 				<form:form action="saveUser"  method="POST"  modelAttribute="user">
 				
-				<form:input path="userName" type="text" placeholder="User Name" value="Shubham"></form:input>
+				<form:input path="userName" type="text" placeholder="User Name" value=""></form:input>
 				 <form:errors path="userName" cssClass="error"></form:errors>
 				
-				<form:input path="password" type="text" placeholder="Password" value="Shubham"></form:input>
+				<form:input path="password" type="text" placeholder="Password" value=""></form:input>
 				 <form:errors path="password" cssClass="error"></form:errors>
 				
-				<form:input path="email" type="text" placeholder="email" value="sh@gmail.com"></form:input>
+				<form:input path="email" type="text" placeholder="email" value=""></form:input>
 				<form:errors path="email" cssClass="error"></form:errors>
 				
 				<form:input path="phoneNumber" type="text" placeholder="phoneNumber" value="1234567890"></form:input>
